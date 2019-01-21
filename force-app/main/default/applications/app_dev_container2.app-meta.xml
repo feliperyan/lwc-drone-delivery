@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#C689EA</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>app dev container</label>
+    <navType>Standard</navType>
+    <tabs>Drone_Delivery_App</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>App_Dev_Container_UtilityBar</utilityBar>
+</CustomApplication>
