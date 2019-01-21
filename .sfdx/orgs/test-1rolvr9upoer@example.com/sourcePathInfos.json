@@ -1,0 +1,257 @@
+[
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1544224052286,
+            "changeTime": 1544224052286,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1544224052286,
+            "changeTime": 1544224052286,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 224,
+            "modifiedTime": 1548063651653,
+            "changeTime": 1548063651653,
+            "contentHash": "b33da859c38cb2216f618cd6618589ec3680b185",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/applications",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/applications",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1548061887264,
+            "changeTime": 1548061887264,
+            "contentHash": "5c43a6966a9d5c5fbcd0967796233d3e8bf17dc2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/applications/app_dev_container2.app-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/applications/app_dev_container2.app-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 626,
+            "modifiedTime": 1548061887264,
+            "changeTime": 1548061887264,
+            "contentHash": "9e2c60e369a6889e8c3f815a7950e6c15291a9a4",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/aura",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1544224052286,
+            "changeTime": 1544224052286,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1548063545886,
+            "changeTime": 1548063545886,
+            "contentHash": "45c967e87724384904e908299690b89954f842f2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/App_Dev_Container_UtilityBar.flexipage-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/App_Dev_Container_UtilityBar.flexipage-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 512,
+            "modifiedTime": 1548061887261,
+            "changeTime": 1548061887261,
+            "contentHash": "d0f8b18325faf637d9e64ba638dd1e69d5f8ad39",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/Drone_Delivery_App.flexipage-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/Drone_Delivery_App.flexipage-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 1282,
+            "modifiedTime": 1548061887259,
+            "changeTime": 1548061887259,
+            "contentHash": "6cca100a9e9df65fda56e7cadc3b9e0a68db1eaf",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1544224194353,
+            "changeTime": 1544224194353,
+            "contentHash": "a559f21668dc3bbe60a5f0e3db71d3c4bdadf1fe",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1544224194355,
+            "changeTime": 1544224194355,
+            "contentHash": "4f426a96862b686ddecd15023b72f4abc1a3acc7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.html",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.html",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 545,
+            "modifiedTime": 1548064181714,
+            "changeTime": 1548064181714,
+            "contentHash": "64762d79acbf32f343365b7c7d295dabf191c046",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.js",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 354,
+            "modifiedTime": 1548064386883,
+            "changeTime": 1548064386883,
+            "contentHash": "05dcd4ff699e04dca3f34fd11af3cdb3724a7ad2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.js-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.js-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 392,
+            "modifiedTime": 1544226347151,
+            "changeTime": 1544226347151,
+            "contentHash": "cd7d0f3d3df451543740180dd2e199757cbaf021",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/tabs",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/tabs",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1548061887262,
+            "changeTime": 1548061887262,
+            "contentHash": "34d62af3558c83d1d9b62656441d2cc6596ab25a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/tabs/Drone_Delivery_App.tab-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/tabs/Drone_Delivery_App.tab-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 332,
+            "modifiedTime": 1548061887263,
+            "changeTime": 1548061887263,
+            "contentHash": "a4dd48f919f8ba7974f2ca706d8ea102ca49fee1",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1",
+        {
+            "state": "u",
+            "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 352,
+            "modifiedTime": 1548063755882,
+            "changeTime": 1548063755882,
+            "contentHash": "3fab680288c1acb0aff9e3b35eaf720b1f778e62",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]

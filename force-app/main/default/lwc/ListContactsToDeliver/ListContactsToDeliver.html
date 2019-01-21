@@ -1,0 +1,12 @@
+<template>
+    <div class="slds-m-around_medium">
+        <template if:true={contacts.data}>
+            <template for:each={contacts.data} for:item="c">
+                <p key={c.Id}>{c.Name} at {c.MailingStreet}</p>
+            </template>
+        </template>
+        <template if:true={contacts.error}>
+            <c-error-panel errors={contacts.error}></c-error-panel>
+        </template>
+    </div>
+</template>

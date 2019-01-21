@@ -5,6 +5,9 @@
         "paths": {
             "c/webcomponent1": [
                 "webcomponent1/webcomponent1.js"
+            ],
+            "c/list-contacts-to-deliver": [
+                "ListContactsToDeliver/ListContactsToDeliver.js"
             ]
         }
     },
