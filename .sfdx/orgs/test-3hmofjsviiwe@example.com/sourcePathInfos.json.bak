@@ -183,11 +183,11 @@
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/webcomponent1/webcomponent1.js",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 1715,
-            "modifiedTime": 1548180677490,
-            "changeTime": 1548180677490,
+            "size": 1755,
+            "modifiedTime": 1548180496023,
+            "changeTime": 1548180496023,
             "isWorkspace": false,
-            "contentHash": "d2ed9e300239f5e7865c626d316ad8cc5eae6e48"
+            "contentHash": "6bf93c7c17aaf860c1a4d653562486b27961011e"
         }
     ],
     [

@@ -11,6 +11,9 @@
             ],
             "c/webcomponent1": [
                 "webcomponent1/webcomponent1.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
             ]
         }
     },
