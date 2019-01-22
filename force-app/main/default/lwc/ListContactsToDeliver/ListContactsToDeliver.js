@@ -1,7 +1,11 @@
 import { LightningElement, wire, track } from 'lwc';
 import getContactsForCity from '@salesforce/apex/GetContactsAddresses.getContactsForCity';
+import { fireEvent } from 'c/pubsub';
+import { CurrentPageReference } from 'lightning/navigation';
+
 
 export default class ListContactsToDeliver extends LightningElement {
+    @wire(CurrentPageReference) pageRef;
     @track contacts;
     @track error;
 
@@ -25,8 +29,8 @@ export default class ListContactsToDeliver extends LightningElement {
         const contactId = event.target.parentNode.getAttribute('data-contactid');
         console.log("15");       
 
-        // Get all selected buttons and create list of contactIds
-        const selected = Array.from(
+        // Get all selected buttons and create list of contacts
+        this.coordinates = Array.from(
             this.template.querySelectorAll('lightning-button-icon-stateful')
         )
         .filter(element => element.selected)
@@ -39,11 +43,10 @@ export default class ListContactsToDeliver extends LightningElement {
                 }
             }
             return contact;
-        });
+        });        
+    }
 
-        console.log(selected);
-        for (var c of selected){
-            console.log(c.Name +' '+c.MailingStreet);
-        }
+    handleButtonClick(event){
+        fireEvent(this.pageRef, 'destinationsAreSet', this.coordinates);
     }
 }

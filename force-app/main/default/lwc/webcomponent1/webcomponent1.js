@@ -1,6 +1,10 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, wire } from 'lwc';
+import { registerListener, unregisterAllListeners, fireEvent } from 'c/pubsub';
+import { CurrentPageReference } from 'lightning/navigation';
 
 export default class Webcomponent1 extends LightningElement {
+    @wire(CurrentPageReference) pageRef;
+    
     greeting = "yolo";
     zoom = 13;
     mapMarkers = [{
@@ -13,4 +17,15 @@ export default class Webcomponent1 extends LightningElement {
         icon: 'standard:account'
     }]
 
+    connectedCallback() {
+        registerListener('destinationsAreSet', this.handleDestinations, this);
+    }
+
+    disconnectedCallback() {
+        unregisterAllListeners(this);
+    }
+
+    handleDestinations(contacts){
+        console.log(contacts);
+    }
 }
