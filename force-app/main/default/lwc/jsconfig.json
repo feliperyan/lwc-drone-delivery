@@ -6,6 +6,9 @@
             "c/list-contacts-to-deliver": [
                 "ListContactsToDeliver/ListContactsToDeliver.js"
             ],
+            "c/error-panel": [
+                "errorPanel/errorPanel.js"
+            ],
             "c/webcomponent1": [
                 "webcomponent1/webcomponent1.js"
             ]
