@@ -54,7 +54,7 @@ export default class mapLocationsToDeliver extends LightningElement {
         this.mapMarkers = [];
         this.mapMarkers.push(this.origin);
 
-        console.log(contacts[0].Name);
+        console.log(contacts.map(element=>{return element.Name}));
         
         for (let c of contacts) {
             let dest = {
@@ -74,13 +74,17 @@ export default class mapLocationsToDeliver extends LightningElement {
             this.mapMarkers.push(dest);
         }
 
-        this.leafletMarkers.clearLayers();
+        //clear old markers
+        for (let m of this.leafletMarkers){
+            this.myMap.removeLayer(m);            
+        }
+        console.log("Removed all old markers.");
 
         for (let i of this.mapMarkers){
             let lat = i['location']['Latitude'];
             let lon = i['location']['Longitude'];
             let marker = L.marker([lat, lon]).addTo(this.myMap);
-            this.leafletMarkers.addLayer(marker);
+            this.leafletMarkers.push(marker);
         }
     }
 
@@ -105,11 +109,10 @@ export default class mapLocationsToDeliver extends LightningElement {
     }
 
     initialiseLeaflet() {
+        console.log('TEN');
         console.log('COMPUTER will now do "things" to initialise leaflet');            
         let mapElement = this.template.querySelector('div.LeafMap');
-        console.log(mapElement);
-
-        console.log('FIVE');
+        console.log(mapElement);        
 
         this.myMap = L.map(mapElement, {            
             zoom: false,
@@ -119,7 +122,7 @@ export default class mapLocationsToDeliver extends LightningElement {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.myMap);
 
-        this.leafletMarkers = L.markerClusterGroup();
+        this.leafletMarkers = [];
 
 
 

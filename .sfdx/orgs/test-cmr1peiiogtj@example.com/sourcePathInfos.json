@@ -47,10 +47,10 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/applications",
             "isDirectory": true,
-            "size": 128,
-            "modifiedTime": 1548755299408,
-            "changeTime": 1548755299408,
-            "contentHash": "07c55cc1f5ea6b5991f161adfcefcdf5e7b81229",
+            "size": 96,
+            "modifiedTime": 1548755410733,
+            "changeTime": 1548755410733,
+            "contentHash": "4ce29d826d899afa843ead5dca2887dfd374c787",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -120,10 +120,10 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages",
             "isDirectory": true,
-            "size": 160,
-            "modifiedTime": 1548755299407,
-            "changeTime": 1548755299407,
-            "contentHash": "f6bc23843b1996c5e660849166e53db722db2a48",
+            "size": 128,
+            "modifiedTime": 1548755410734,
+            "changeTime": 1548755410734,
+            "contentHash": "7c7e80a6cd9e8624a7c152d4276aeeca8cbf4bc7",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -131,14 +131,14 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/Drone_Delivery_App.flexipage-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/Drone_Delivery_App.flexipage-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 1414,
             "modifiedTime": 1548755534722,
             "changeTime": 1548755534722,
-            "contentHash": "6b76bb6cf4acfc3bfb30cf908808e7549a6d3ac0"
+            "contentHash": "6b76bb6cf4acfc3bfb30cf908808e7549a6d3ac0",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
@@ -174,14 +174,13 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/listContactsToDeliver/listContactsToDeliver.html",
             "isDirectory": false,
-            "size": 1078,
-            "modifiedTime": 1548754631905,
-            "changeTime": 1548350890325,
-            "contentHash": "933884da7b9a3052d03ef6399ba281b0ef6b71b7",
+            "size": 1158,
+            "modifiedTime": 1548756692636,
+            "changeTime": 1548756692636,
+            "contentHash": "895a6b8762aaf66cd79ffc3be29980982eda7519",
             "isMetadataFile": false,
             "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "isWorkspace": false
         }
     ],
     [
@@ -571,14 +570,14 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
         {
+            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
             "isDirectory": false,
-            "size": 4396,
-            "modifiedTime": 1548754760945,
-            "changeTime": 1548754760945,
-            "contentHash": "ffe9127e75ae90b71a3fb73ac0e2a0a91abc472f",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 4545,
+            "modifiedTime": 1548757288439,
+            "changeTime": 1548757288439,
+            "contentHash": "7b4357bbf553caa697c5d43e582337c6dc94e266"
         }
     ],
     [
