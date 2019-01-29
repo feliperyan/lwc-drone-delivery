@@ -131,15 +131,14 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/Drone_Delivery_App.flexipage-meta.xml",
         {
+            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/flexipages/Drone_Delivery_App.flexipage-meta.xml",
             "isDirectory": false,
-            "size": 1290,
-            "modifiedTime": 1548754518340,
-            "changeTime": 1548754518340,
-            "contentHash": "a6ca61d14431e0b2a7a86ad485673f37ede4ae71",
             "isMetadataFile": true,
-            "state": "u",
-            "isWorkspace": false
+            "size": 1414,
+            "modifiedTime": 1548755534722,
+            "changeTime": 1548755534722,
+            "contentHash": "6b76bb6cf4acfc3bfb30cf908808e7549a6d3ac0"
         }
     ],
     [
