@@ -1,0 +1,26 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef1"
+            },
+            "Name": "Felipe Ryan",
+            "MailingLatitude": -33.891220261686,
+            "MailingLongitude": 151.25293767513185,
+            "MailingStreet": "257 Oxford St Bondi Junction",
+            "MailingCity": "Sydney"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef2"
+            },
+            "Name": "Bhodi Satva",
+            "MailingLatitude": -33.89300445316857,
+            "MailingLongitude": 151.25774727329352,
+            "MailingStreet": "100 Bondi Road, Bondi",
+            "MailingCity": "Sydney"
+        }
+    ]
+}

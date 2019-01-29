@@ -8,7 +8,7 @@
         <name>backgroundComponents</name>
         <type>Background</type>
     </flexiPageRegions>
-    <masterLabel>App Dev Container UtilityBar</masterLabel>
+    <masterLabel>Drone Delivery UtilityBar</masterLabel>
     <template>
         <name>one:utilityBarTemplateDesktop</name>
     </template>

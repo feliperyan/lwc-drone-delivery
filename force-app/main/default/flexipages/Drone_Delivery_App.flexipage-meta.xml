@@ -17,7 +17,7 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>webcomponent1</componentName>
+            <componentName>mapLocationsToDeliver</componentName>
         </componentInstances>
         <name>region2</name>
         <type>Region</type>

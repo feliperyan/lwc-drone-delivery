@@ -3,17 +3,20 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/list-contacts-to-deliver": [
-                "ListContactsToDeliver/ListContactsToDeliver.js"
-            ],
             "c/error-panel": [
                 "errorPanel/errorPanel.js"
             ],
-            "c/webcomponent1": [
-                "webcomponent1/webcomponent1.js"
+            "c/list-contacts-to-deliver": [
+                "listContactsToDeliver/listContactsToDeliver.js"
             ],
             "c/pubsub": [
                 "pubsub/pubsub.js"
+            ],
+            "c/leaflet": [
+                "../staticresources/leaflet/leaflet.js"
+            ],
+            "c/map-locations-to-deliver": [
+                "mapLocationsToDeliver/mapLocationsToDeliver.js"
             ]
         }
     },

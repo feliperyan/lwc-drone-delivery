@@ -4,7 +4,7 @@ import { fireEvent } from 'c/pubsub';
 import { CurrentPageReference } from 'lightning/navigation';
 
 
-export default class ListContactsToDeliver extends LightningElement {
+export default class listContactsToDeliver extends LightningElement {
     @wire(CurrentPageReference) pageRef;
     @track contacts;
     @track error;
@@ -15,8 +15,6 @@ export default class ListContactsToDeliver extends LightningElement {
     wiredContacts({error, data}){
         if (data){
             this.contacts = data;
-            console.log('data');
-            console.log(data);
         }
         else if (error) {
             console.log(error);
@@ -26,8 +24,7 @@ export default class ListContactsToDeliver extends LightningElement {
 
     handleLikeButtonClick(event){
         event.target.selected = !event.target.selected;
-        const contactId = event.target.parentNode.getAttribute('data-contactid');
-        console.log("15");       
+        const contactId = event.target.parentNode.getAttribute('data-contactid');     
 
         // Get all selected buttons and create list of contacts
         this.coordinates = Array.from(
@@ -43,7 +40,9 @@ export default class ListContactsToDeliver extends LightningElement {
                 }
             }
             return contact;
-        });        
+        });
+
+        console.log('c:listContactsToDeliver says: ' + this.coordinates.map(e =>{return e.Name;}) );
     }
 
     handleButtonClick(event){

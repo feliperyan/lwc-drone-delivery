@@ -1,11 +1,12 @@
 <template>
-        
-    <lightning-button
-        variant="brand"
-        label="Submit"
-        onclick={handleButtonClick}></lightning-button>
-    
     <div class="slds-m-around_medium">
+    
+        <lightning-button
+            variant="brand"
+            label="Submit"
+            onclick={handleButtonClick}></lightning-button>
+    
+    
 
         <template if:true={contacts}>
             <template for:each={contacts} for:item="c">
