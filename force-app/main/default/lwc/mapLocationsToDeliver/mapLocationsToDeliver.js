@@ -96,7 +96,8 @@ export default class mapLocationsToDeliver extends LightningElement {
     drawPolyLines() {
         console.log(this.polyLines);
         if (this.polyLines !== null) {
-            console.log('polylines was already defined.');
+            console.log('Clearing polylines');
+            this.myMap.removeLayer(this.polyLines);
         }
 
         console.log("ADDING POLY LINE");
