@@ -3,15 +3,14 @@ import { registerListener, unregisterAllListeners, fireEvent } from 'c/pubsub';
 import { CurrentPageReference } from 'lightning/navigation';
 import { loadScript, loadStyle } from 'lightning/platformResourceLoader';
 
-// import leaflet css?
+import getCalloutResponseContents from '@salesforce/apex/BestPathAPI.getCalloutResponseContents';
 import leaflet from '@salesforce/resourceUrl/leaflet';
-
-
 
 
 export default class mapLocationsToDeliver extends LightningElement {
     @wire(CurrentPageReference) pageRef;
-    
+    @track canCallAPI = true;
+
     markerIconUrl = leaflet + '/images/marker-icon.png';
     markerIconUrl2x = leaflet + '/images/marker-icon-2x.png';
     markerShadow = leaflet + '/images/marker-shadow.png';
@@ -43,6 +42,23 @@ export default class mapLocationsToDeliver extends LightningElement {
         icon: 'standard:account'
     }]
 
+    handleCallAPI() {
+
+        let b = this.mapMarkers.map(e => {
+            return {"name": e.title, "latlon": [e.location.Latitude, e.location.Longitude]};
+        });
+
+        b = JSON.stringify({ "delivery_points": b });
+        console.log(b);
+
+        getCalloutResponseContents({url:'http://fryan-drone-routing-api.herokuapp.com/api/delivery_order', body:b}).then(result => {
+            console.log(JSON.parse(result).delivery_order);
+            this.drawPolyLines(JSON.parse(result).delivery_order);
+        }).catch(error => {
+            console.log(error);
+        });
+    }
+
     connectedCallback() {
         registerListener('destinationsAreSet', this.handleDestinations, this);
     }
@@ -54,6 +70,9 @@ export default class mapLocationsToDeliver extends LightningElement {
     handleDestinations(contacts){
         console.log("received event: destinationsAreSet");
         
+        this.clearMap();
+
+        this.canCallAPI = false;
         this.mapMarkers = [];
         this.mapMarkers.push(this.origin);
 
@@ -75,34 +94,31 @@ export default class mapLocationsToDeliver extends LightningElement {
                 icon: 'standard:account',
             }
             this.mapMarkers.push(dest);
-        }
-
-        //clear old markers
-        for (let m of this.leafletMarkers){
-            this.myMap.removeLayer(m);            
-        }
-        console.log("Removed all old markers.");
+        }        
 
         for (let i of this.mapMarkers){
             let lat = i['location']['Latitude'];
             let lon = i['location']['Longitude'];
             let marker = L.marker([lat, lon]).addTo(this.myMap);
             this.leafletMarkers.push(marker);
-        }
-
-        this.drawPolyLines();
+        }        
     }
 
-    drawPolyLines() {
-        console.log(this.polyLines);
+    clearMap() {
         if (this.polyLines !== null) {
             console.log('Clearing polylines');
             this.myMap.removeLayer(this.polyLines);
         }
 
-        console.log("ADDING POLY LINE");
-        let lines = this.mapMarkers.map( element => { 
-            return [element['location']['Latitude'], element['location']['Longitude']];
+        for (let m of this.leafletMarkers){
+            this.myMap.removeLayer(m);            
+        }
+
+    }
+
+    drawPolyLines(responseJson) {
+        let lines = responseJson.map( element => { 
+            return element.latlon;
         });
         console.log(lines);
 

@@ -32,14 +32,14 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 448,
             "modifiedTime": 1548953829915,
             "changeTime": 1548953829915,
-            "contentHash": "655068a27c40520ca0002f1a2609bcc85b32f860"
+            "contentHash": "655068a27c40520ca0002f1a2609bcc85b32f860",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
@@ -186,10 +186,10 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/listContactsToDeliver/listContactsToDeliver.js",
             "isDirectory": false,
-            "size": 1610,
-            "modifiedTime": 1548754720343,
-            "changeTime": 1548754720343,
-            "contentHash": "15976a462053228116f40b60876b8feec0e1d0a2",
+            "size": 1611,
+            "modifiedTime": 1548954774817,
+            "changeTime": 1548954774817,
+            "contentHash": "00a170894fa754b2cb30a60c4be9d55e32d3f60d",
             "isMetadataFile": false,
             "state": "u",
             "isWorkspace": false
@@ -556,10 +556,10 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.html",
             "isDirectory": false,
-            "size": 286,
-            "modifiedTime": 1548754582425,
-            "changeTime": 1548754582426,
-            "contentHash": "33553d7b88c5dacc7893d19ec198831fd53f5185",
+            "size": 351,
+            "modifiedTime": 1548956549451,
+            "changeTime": 1548956549451,
+            "contentHash": "e2d82dadf7b7d5f4298d2f3db29cc0af89bedaaf",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -567,14 +567,14 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
         {
+            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
             "isDirectory": false,
-            "size": 4353,
-            "modifiedTime": 1548950542972,
-            "changeTime": 1548950542972,
-            "contentHash": "c8a377e7fa7a6c1463e6c78f61a0624baba9fe1f",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 5073,
+            "modifiedTime": 1548960185841,
+            "changeTime": 1548960185841,
+            "contentHash": "15282436d2c9546fb650b2d84b6b6df24b36c267"
         }
     ],
     [
@@ -632,14 +632,14 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/profiles/Admin.profile-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/profiles/Admin.profile-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 19122,
             "modifiedTime": 1548953829913,
             "changeTime": 1548953829913,
-            "contentHash": "2ab51c6e7a93601b4bbfe6628a5ffee8f6954df0"
+            "contentHash": "2ab51c6e7a93601b4bbfe6628a5ffee8f6954df0",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
@@ -736,27 +736,27 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/remoteSiteSettings/Drone_Delivery_API.remoteSite-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/remoteSiteSettings/Drone_Delivery_API.remoteSite-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 279,
             "modifiedTime": 1548953829915,
             "changeTime": 1548953829915,
-            "contentHash": "56bab5c2bed4ac860e71dcda7892113f1a1da859"
+            "contentHash": "56bab5c2bed4ac860e71dcda7892113f1a1da859",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/remoteSiteSettings",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/remoteSiteSettings",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1548953829915,
             "changeTime": 1548953829915,
-            "contentHash": "2c93f8857a4ad940535c2569a4031ead678d02a5"
+            "contentHash": "2c93f8857a4ad940535c2569a4031ead678d02a5",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ]
 ]

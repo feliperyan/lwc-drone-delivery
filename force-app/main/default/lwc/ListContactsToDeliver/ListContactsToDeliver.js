@@ -1,5 +1,6 @@
 import { LightningElement, wire, track } from 'lwc';
 import getContactsForCity from '@salesforce/apex/GetContactsAddresses.getContactsForCity';
+
 import { fireEvent } from 'c/pubsub';
 import { CurrentPageReference } from 'lightning/navigation';
 
