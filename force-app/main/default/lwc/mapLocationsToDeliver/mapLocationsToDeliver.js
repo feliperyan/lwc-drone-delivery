@@ -7,6 +7,8 @@ import { loadScript, loadStyle } from 'lightning/platformResourceLoader';
 import leaflet from '@salesforce/resourceUrl/leaflet';
 
 
+
+
 export default class mapLocationsToDeliver extends LightningElement {
     @wire(CurrentPageReference) pageRef;
     
@@ -17,9 +19,10 @@ export default class mapLocationsToDeliver extends LightningElement {
     leafletInit = false;
     myMap;
     leafletMarkers;
+    polyLines = null;
 
-    greeting = "yolo";
     zoom = 13;
+
     origin = {
         location: {
             "Latitude": -33.8988,
@@ -64,8 +67,8 @@ export default class mapLocationsToDeliver extends LightningElement {
                     'PostalCode': c.PostalCode,
                     'State': c.MailingState,
                     'Street': c.MailingStreet,
-                    'Latitude': c.MailingLatitude,
-                    'Longitude': c.MailingLongitude
+                    'Latitude': parseFloat(c.MailingLatitude),
+                    'Longitude': parseFloat(c.MailingLongitude)
                 },
                 title: c.Name,
                 description: "None atm",
@@ -86,6 +89,24 @@ export default class mapLocationsToDeliver extends LightningElement {
             let marker = L.marker([lat, lon]).addTo(this.myMap);
             this.leafletMarkers.push(marker);
         }
+
+        this.drawPolyLines();
+    }
+
+    drawPolyLines() {
+        console.log(this.polyLines);
+        if (this.polyLines !== null) {
+            console.log('polylines was already defined.');
+        }
+
+        console.log("ADDING POLY LINE");
+        let lines = this.mapMarkers.map( element => { 
+            return [element['location']['Latitude'], element['location']['Longitude']];
+        });
+        console.log(lines);
+
+        this.polyLines = L.polyline.antPath(lines);
+        this.polyLines.addTo(this.myMap);
     }
 
     renderedCallback(){
@@ -97,22 +118,19 @@ export default class mapLocationsToDeliver extends LightningElement {
         Promise.all(
             [
                 loadStyle(this, leaflet + '/leaflet.css'),
-                loadScript(this, leaflet + '/leaflet.js')                        
+                // loadScript(this, leaflet + '/leaflet.js')
+                loadScript(this, leaflet + '/leaflet-ant-path.js')
             ]
         ).then(() => {
             this.initialiseLeaflet();
-        }).catch(error => {
-            console.log('COMPUTER SAYS NO to load leaflet scripts');
-        });
-        
-        
+        }).catch((error) => {
+            console.log('COMPUTER SAYS NO to load leaflet scripts: ' + error);
+        });        
     }
 
     initialiseLeaflet() {
-        console.log('TEN');
         console.log('COMPUTER will now do "things" to initialise leaflet');            
         let mapElement = this.template.querySelector('div.LeafMap');
-        console.log(mapElement);        
 
         this.myMap = L.map(mapElement, {            
             zoom: false,
@@ -122,20 +140,6 @@ export default class mapLocationsToDeliver extends LightningElement {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.myMap);
 
-        this.leafletMarkers = [];
-
-
-
-        // L.tileLayer('http://a.tile.openstreetmap.fr/hot/${z}/${x}/${y}.png', {
-        //     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        // }).addTo(myMap);
-
-        // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        //     maxZoom: 18,
-        //     id: 'mapbox.streets',
-        //     accessToken: 'your.mapbox.access.token'
-        // }).addTo(myMap);
-        
+        this.leafletMarkers = [];        
     }
 }

@@ -9,14 +9,14 @@
             "c/list-contacts-to-deliver": [
                 "listContactsToDeliver/listContactsToDeliver.js"
             ],
+            "c/map-locations-to-deliver": [
+                "mapLocationsToDeliver/mapLocationsToDeliver.js"
+            ],
             "c/pubsub": [
                 "pubsub/pubsub.js"
             ],
             "c/leaflet": [
                 "../staticresources/leaflet/leaflet.js"
-            ],
-            "c/map-locations-to-deliver": [
-                "mapLocationsToDeliver/mapLocationsToDeliver.js"
             ]
         }
     },
