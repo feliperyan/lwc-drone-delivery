@@ -10,6 +10,8 @@ import leaflet from '@salesforce/resourceUrl/leaflet';
 export default class mapLocationsToDeliver extends LightningElement {
     @wire(CurrentPageReference) pageRef;
     @track canCallAPI = true;
+    @track metersTravelled;
+    @track timeTakenToCompute;
 
     markerIconUrl = leaflet + '/images/marker-icon.png';
     markerIconUrl2x = leaflet + '/images/marker-icon-2x.png';
@@ -54,6 +56,8 @@ export default class mapLocationsToDeliver extends LightningElement {
         getCalloutResponseContents({url:'http://fryan-drone-routing-api.herokuapp.com/api/delivery_order', body:b}).then(result => {
             console.log(JSON.parse(result).delivery_order);
             this.drawPolyLines(JSON.parse(result).delivery_order);
+            this.metersTravelled = JSON.parse(result).total_distance_in_meters;
+            this.timeTakenToCompute = JSON.parse(result).time_to_compute_in_seconds;
         }).catch(error => {
             console.log(error);
         });
