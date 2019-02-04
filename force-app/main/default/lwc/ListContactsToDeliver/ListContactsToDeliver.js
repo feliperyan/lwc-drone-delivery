@@ -44,9 +44,10 @@ export default class listContactsToDeliver extends LightningElement {
         });
 
         console.log('c:listContactsToDeliver says: ' + this.coordinates.map(e =>{return e.Name;}) );
-    }
-
-    handleButtonClick(event){
         fireEvent(this.pageRef, 'destinationsAreSet', this.coordinates);
     }
+
+    // handleButtonClick(event){
+    //     fireEvent(this.pageRef, 'destinationsAreSet', this.coordinates);
+    // }
 }

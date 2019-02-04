@@ -1,13 +1,11 @@
 <template>
     <div class="slds-m-around_medium">
     
-        <lightning-button
+        <!-- <lightning-button
             variant="brand"
             label="Submit"
-            onclick={handleButtonClick}></lightning-button>
-    
-    
-
+            onclick={handleButtonClick}></lightning-button> -->
+            
         <template if:true={contacts}>
             <template for:each={contacts} for:item="c">
                 <lightning-card key={c.Id} title={c.Name} data-contactid={c.Id} icon-name="custom:custom63">                                          
