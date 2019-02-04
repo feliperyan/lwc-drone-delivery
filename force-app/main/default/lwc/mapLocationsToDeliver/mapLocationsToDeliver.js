@@ -104,6 +104,7 @@ export default class mapLocationsToDeliver extends LightningElement {
             let lat = i['location']['Latitude'];
             let lon = i['location']['Longitude'];
             let marker = L.marker([lat, lon]).addTo(this.myMap);
+            marker.bindPopup("<b>"+i['title']+"</b><br/>"+i['location']['Street']);
             this.leafletMarkers.push(marker);
         }        
     }
