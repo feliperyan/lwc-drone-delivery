@@ -364,7 +364,7 @@
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images",
             "isDirectory": true,
             "size": 320,
-            "modifiedTime": 1549377965695,
+            "modifiedTime": 1549378890050,
             "changeTime": 1549377965695,
             "contentHash": "c6861e136162ae25254d7ee7f9d2136916ffd239",
             "isMetadataFile": false,
@@ -570,10 +570,10 @@
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 6406,
-            "modifiedTime": 1549378335911,
-            "changeTime": 1549378335911,
-            "contentHash": "7e699d877d639ac07841c30977bf51db3e1515ea"
+            "size": 6279,
+            "modifiedTime": 1549380227064,
+            "changeTime": 1549380227064,
+            "contentHash": "ebbd7a9e6c719b53360689f7f09b8de05b747396"
         }
     ],
     [
@@ -841,10 +841,10 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images/drone_marker1x.png",
             "isDirectory": false,
-            "size": 2421,
-            "modifiedTime": 1549377810380,
-            "changeTime": 1549377905297,
-            "contentHash": "6d8bb70e737a7152b992b412470c944d0a0b2144",
+            "size": 3979,
+            "modifiedTime": 1549378890049,
+            "changeTime": 1549378890064,
+            "contentHash": "9abeaa7fa3ecfa49f3d098ae45f2196bf5e16f52",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -854,10 +854,10 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images/drone_marker2x.png",
             "isDirectory": false,
-            "size": 3918,
-            "modifiedTime": 1549377789991,
-            "changeTime": 1549377905298,
-            "contentHash": "4220fe0232f6ed4ccdf49121c8b2c7e299eae656",
+            "size": 10993,
+            "modifiedTime": 1549378864523,
+            "changeTime": 1549378864537,
+            "contentHash": "298ebf40ee54f5e9ef9780fc0005698883f39636",
             "isMetadataFile": false,
             "state": "u"
         }

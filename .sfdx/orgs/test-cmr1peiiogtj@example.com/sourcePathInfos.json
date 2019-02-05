@@ -570,10 +570,10 @@
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 6255,
-            "modifiedTime": 1549378966084,
-            "changeTime": 1549378966084,
-            "contentHash": "03777494c3bb7d1ecc3b7b7527d57840bb0f9bba"
+            "size": 6284,
+            "modifiedTime": 1549380334386,
+            "changeTime": 1549380334386,
+            "contentHash": "0908671aa1b51b0c4dcf0af6460be636a618133e"
         }
     ],
     [
@@ -839,27 +839,27 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images/drone_marker1x.png",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images/drone_marker1x.png",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 3979,
             "modifiedTime": 1549378890049,
             "changeTime": 1549378890064,
-            "contentHash": "9abeaa7fa3ecfa49f3d098ae45f2196bf5e16f52"
+            "contentHash": "9abeaa7fa3ecfa49f3d098ae45f2196bf5e16f52",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images/drone_marker2x.png",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/staticresources/leaflet/images/drone_marker2x.png",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 10993,
             "modifiedTime": 1549378864523,
             "changeTime": 1549378864537,
-            "contentHash": "298ebf40ee54f5e9ef9780fc0005698883f39636"
+            "contentHash": "298ebf40ee54f5e9ef9780fc0005698883f39636",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [

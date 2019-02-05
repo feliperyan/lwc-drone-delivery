@@ -13,6 +13,8 @@ export default class mapLocationsToDeliver extends LightningElement {
     @track metersTravelled;
     @track timeTakenToCompute;
 
+    api_url = 'http://fryan-drone-routing-api.herokuapp.com/api/delivery_order';
+
     markerIconUrl = leaflet + '/images/marker-icon.png';
     markerIconUrl2x = leaflet + '/images/marker-icon-2x.png';
     markerShadow = leaflet + '/images/marker-shadow.png';
@@ -51,7 +53,7 @@ export default class mapLocationsToDeliver extends LightningElement {
         b = JSON.stringify({ "delivery_points": b });
         console.log(b);
 
-        getCalloutResponseContents({url:'http://fryan-drone-routing-api.herokuapp.com/api/delivery_order', body:b}).then(result => {
+        getCalloutResponseContents({url:this.api_url, body:b}).then(result => {
             console.log(JSON.parse(result).delivery_order);
             this.drawPolyLines(JSON.parse(result).delivery_order);
             this.metersTravelled = JSON.parse(result).total_distance_in_meters;
