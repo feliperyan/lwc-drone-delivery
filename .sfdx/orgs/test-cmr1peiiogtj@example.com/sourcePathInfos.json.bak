@@ -571,10 +571,10 @@
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 5073,
-            "modifiedTime": 1548960185841,
-            "changeTime": 1548960185841,
-            "contentHash": "15282436d2c9546fb650b2d84b6b6df24b36c267"
+            "size": 4951,
+            "modifiedTime": 1548960408926,
+            "changeTime": 1548960408926,
+            "contentHash": "43ac2201cb8a1ad82bf6bb9d48e6afb36f6f0654"
         }
     ],
     [
