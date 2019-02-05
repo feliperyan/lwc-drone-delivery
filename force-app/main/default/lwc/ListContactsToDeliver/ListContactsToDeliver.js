@@ -11,11 +11,32 @@ export default class listContactsToDeliver extends LightningElement {
     @track error;
 
     coordinates;
+    originName = 'Droneport';
+
+    // default origin
+    origin = {
+        location: {
+            "Latitude": -33.8988,
+            "Longitude": 151.2093
+        },
+        title: 'Droneport',
+        description: "Warehouse",
+        icon: 'standard:account'
+    };
 
     @wire(getContactsForCity, {city: "Sydney"})
-    wiredContacts({error, data}){
-        if (data){
-            this.contacts = data;
+    wiredContacts({error, data}) {
+        if (data) {
+            let tempContacts = [];
+            for (let c of data){
+                if (!c.Droneport__c){
+                    tempContacts.push(c);
+                }
+                else {
+                    this.origin = c;
+                }
+            }
+            this.contacts = tempContacts;                        
         }
         else if (error) {
             console.log(error);
@@ -43,11 +64,13 @@ export default class listContactsToDeliver extends LightningElement {
             return contact;
         });
 
-        console.log('c:listContactsToDeliver says: ' + this.coordinates.map(e =>{return e.Name;}) );
-        fireEvent(this.pageRef, 'destinationsAreSet', this.coordinates);
+        // DEBUG:
+        console.log('c:listContactsToDeliver says COORDS: ' + this.coordinates.map(e =>{return e.Name;}) );
+        console.log('c:listContactsToDeliver says ORIGIN: ' + this.origin);
+    
+        let addressesAndOrigin = [];
+        addressesAndOrigin.push(this.origin);
+        fireEvent(this.pageRef, 'destinationsAreSet', addressesAndOrigin.concat(this.coordinates));
     }
 
-    // handleButtonClick(event){
-    //     fireEvent(this.pageRef, 'destinationsAreSet', this.coordinates);
-    // }
 }

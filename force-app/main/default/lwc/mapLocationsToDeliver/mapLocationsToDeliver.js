@@ -17,22 +17,20 @@ export default class mapLocationsToDeliver extends LightningElement {
     markerIconUrl2x = leaflet + '/images/marker-icon-2x.png';
     markerShadow = leaflet + '/images/marker-shadow.png';
 
+    droneMarker = leaflet + '/images/drone_marker1x.png';
+    droneMarker2x = leaflet + '/images/drone_marker2x.png';
+    droneShadow = leaflet + '/images/drone_shadow.png';
+
     leafletInit = false;
     myMap;
     leafletMarkers;
     polyLines = null;
 
+    theDroneIcon;
+
     zoom = 13;
 
-    origin = {
-        location: {
-            "Latitude": -33.8988,
-            "Longitude": 151.2093
-        },
-        title: 'Point 1',
-        description: "Warehouse",
-        icon: 'standard:account'
-    };
+    origin;
 
     @track mapMarkers = [{
         location: {
@@ -77,11 +75,13 @@ export default class mapLocationsToDeliver extends LightningElement {
         this.clearMap();
 
         this.canCallAPI = false;
-        this.mapMarkers = [];
-        this.mapMarkers.push(this.origin);
+        this.mapMarkers = [];        
 
+        // DEBUG:
         console.log(contacts.map(element=>{return element.Name}));
         
+        // For each of the contacts received in the event, build a list with the
+        // features we want, this will help with the routing API later.
         for (let c of contacts) {
             let dest = {
                 location: {
@@ -96,14 +96,29 @@ export default class mapLocationsToDeliver extends LightningElement {
                 title: c.Name,
                 description: "None atm",
                 icon: 'standard:account',
+                origin: c.Droneport__c
             }
-            this.mapMarkers.push(dest);
-        }        
+            // Test wether this is an "origin" point, meaning where the drone flys from.
+            if (dest.origin){
+                this.origin = dest;
+            // if not plot it as per usual    
+            } else {
+                this.mapMarkers.push(dest);
+            }
+        }
+        // Origin must be firt element:
+        this.mapMarkers.unshift(this.origin);
 
+        // Actually add markers to the map
         for (let i of this.mapMarkers){
             let lat = i['location']['Latitude'];
             let lon = i['location']['Longitude'];
-            let marker = L.marker([lat, lon]).addTo(this.myMap);
+            let marker;
+            if (i.origin){
+                marker = L.marker([lat, lon], {icon: this.theDroneIcon}).addTo(this.myMap);
+            } else {
+                marker = L.marker([lat, lon]).addTo(this.myMap);
+            }            
             marker.bindPopup("<b>"+i['title']+"</b><br/>"+i['location']['Street']);
             this.leafletMarkers.push(marker);
         }        
@@ -162,6 +177,13 @@ export default class mapLocationsToDeliver extends LightningElement {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.myMap);
 
-        this.leafletMarkers = [];        
+        this.leafletMarkers = [];       
+        
+        this.theDroneIcon = L.icon({
+            iconUrl: this.droneMarker,
+            iconSize:     [35, 35], // size of the icon            
+            iconAnchor:   [17, 17], // point of the icon which will correspond to marker's location            
+        });
+
     }
 }
