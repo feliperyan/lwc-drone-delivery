@@ -11,18 +11,9 @@ export default class listContactsToDeliver extends LightningElement {
     @track error;
 
     coordinates;
-    originName = 'Droneport';
 
     // default origin
-    origin = {
-        location: {
-            "Latitude": -33.8988,
-            "Longitude": 151.2093
-        },
-        title: 'Droneport',
-        description: "Warehouse",
-        icon: 'standard:account'
-    };
+    origin = null;
 
     @wire(getContactsForCity, {city: "Sydney"})
     wiredContacts({error, data}) {
@@ -81,9 +72,20 @@ export default class listContactsToDeliver extends LightningElement {
         fireEvent(this.pageRef, 'destinationsAreSet', addressesAndOrigin.concat(this.coordinates));
     }
 
-    handleMapReady(){
-        console.log('GOT event mapReadyForAddresses');
-        fireEvent(this.pageRef, 'destinationsAreSet', addressesAndOrigin.concat(this.coordinates));
+    async handleMapReady(){
+        console.log('Got event mapReadyForAddresses');
+        if (this.origin !== null) {
+            fireEvent(this.pageRef, "destinationsAreSet", [this.origin]);
+        }
+        else {
+            console.log('Data from Apex controller not yet set, waiting 1.5s then trying again');
+            await this.sleep(1500);            
+            fireEvent(this.pageRef, "destinationsAreSet", [this.origin]);
+        }
+    }
+
+    sleep(ms){
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 
 }

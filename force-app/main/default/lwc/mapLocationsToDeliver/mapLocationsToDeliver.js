@@ -57,7 +57,7 @@ export default class mapLocationsToDeliver extends LightningElement {
             console.log(JSON.parse(result).delivery_order);
             this.drawPolyLines(JSON.parse(result).delivery_order);
             this.metersTravelled = JSON.parse(result).total_distance_in_meters;
-            this.timeTakenToCompute = JSON.parse(result).time_to_compute_in_seconds;
+            this.timeTakenToCompute = parseFloat(JSON.parse(result).time_to_compute_in_seconds).toFixed(2);
         }).catch(error => {
             console.log(error);
         });
