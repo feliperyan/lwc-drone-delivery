@@ -83,6 +83,7 @@ export default class listContactsToDeliver extends LightningElement {
 
     handleMapReady(){
         console.log('GOT event mapReadyForAddresses');
+        fireEvent(this.pageRef, 'destinationsAreSet', addressesAndOrigin.concat(this.coordinates));
     }
 
 }
