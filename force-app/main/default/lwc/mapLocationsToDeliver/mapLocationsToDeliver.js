@@ -162,6 +162,7 @@ export default class mapLocationsToDeliver extends LightningElement {
             ]
         ).then(() => {
             this.initialiseLeaflet();
+            fireEvent(this.pageRef, 'mapReadyForAddresses', null);
         }).catch((error) => {
             console.log('COMPUTER SAYS NO to load leaflet scripts: ' + error);
         });        

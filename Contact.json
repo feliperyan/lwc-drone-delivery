@@ -10,7 +10,8 @@
             "MailingStreet": "257 Oxford St Bondi Junction",
             "MailingCity": "Sydney",
             "MailingState":"NSW",
-            "MailingCountry":"Australia"
+            "MailingCountry":"Australia",
+            "Droneport__c": "false"
         },
         {
             "attributes": {
@@ -22,7 +23,21 @@
             "MailingStreet": "100 Bondi Road, Bondi",
             "MailingCity": "Sydney",
             "MailingState":"NSW",
-            "MailingCountry":"Australia"
+            "MailingCountry":"Australia",
+            "Droneport__c":"false"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef3"
+            },
+            "FirstName": "",
+            "LastName": "Salesforce Droneport",
+            "MailingStreet": "201 Sussex St",
+            "MailingCity": "Sydney",
+            "MailingState":"NSW",
+            "MailingCountry":"Australia",
+            "Droneport__c": "true"
         }
     ]
 }

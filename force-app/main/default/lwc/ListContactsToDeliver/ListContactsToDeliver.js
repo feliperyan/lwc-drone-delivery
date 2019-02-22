@@ -1,7 +1,7 @@
 import { LightningElement, wire, track } from 'lwc';
 import getContactsForCity from '@salesforce/apex/GetContactsAddresses.getContactsForCity';
 
-import { fireEvent } from 'c/pubsub';
+import { registerListener, unregisterAllListeners, fireEvent } from 'c/pubsub';
 import { CurrentPageReference } from 'lightning/navigation';
 
 
@@ -44,6 +44,14 @@ export default class listContactsToDeliver extends LightningElement {
         }
     }
 
+    connectedCallback() {
+        registerListener('mapReadyForAddresses', this.handleMapReady, this);
+    }
+
+    disconnectedCallback() {
+        unregisterAllListeners(this);
+    }
+
     handleLikeButtonClick(event){
         event.target.selected = !event.target.selected;
         const contactId = event.target.parentNode.getAttribute('data-contactid');     
@@ -71,6 +79,10 @@ export default class listContactsToDeliver extends LightningElement {
         let addressesAndOrigin = [];
         addressesAndOrigin.push(this.origin);
         fireEvent(this.pageRef, 'destinationsAreSet', addressesAndOrigin.concat(this.coordinates));
+    }
+
+    handleMapReady(){
+        console.log('GOT event mapReadyForAddresses');
     }
 
 }
