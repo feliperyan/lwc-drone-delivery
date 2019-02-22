@@ -75,8 +75,14 @@ export default class mapLocationsToDeliver extends LightningElement {
         console.log("received event: destinationsAreSet");
         
         this.clearMap();
-
-        this.canCallAPI = false;
+        if(contacts.length > 1) {
+            // otherwise we only got the origin
+            this.canCallAPI = false;
+        }
+        else {
+            this.canCallAPI = true;
+        }
+        
         this.mapMarkers = [];        
 
         // DEBUG:

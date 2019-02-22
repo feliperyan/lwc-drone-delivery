@@ -362,15 +362,15 @@
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/listContactsToDeliver/listContactsToDeliver.js",
         {
-            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/listContactsToDeliver/listContactsToDeliver.js",
             "isDirectory": false,
+            "size": 2892,
+            "modifiedTime": 1550852034267,
+            "changeTime": 1550852034267,
+            "contentHash": "6df53f34af8aad2c52352eeb33cff8572a203ab8",
             "isMetadataFile": false,
-            "size": 2826,
-            "modifiedTime": 1550851896411,
-            "changeTime": 1550851896411,
-            "isWorkspace": false,
-            "contentHash": "9fd475c3a1b3803f10f7ede20c7e147c766eeacf"
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -408,28 +408,27 @@
         {
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.html",
             "isDirectory": false,
-            "size": 444,
-            "modifiedTime": 1549312736303,
-            "changeTime": 1549312736303,
-            "contentHash": "365d574ee7eb6e51088283b439c06b7bbb054c83",
+            "size": 454,
+            "modifiedTime": 1550853076660,
+            "changeTime": 1550853076660,
+            "contentHash": "395d9f7b409be8685f6a082b82a15348f8466a3f",
             "isMetadataFile": false,
             "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "isWorkspace": false
         }
     ],
     [
         "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
         {
+            "state": "u",
             "sourcePath": "/Users/fryan/Documents/dev/sfdx_lwc/lightwebcomp_proj1/force-app/main/default/lwc/mapLocationsToDeliver/mapLocationsToDeliver.js",
             "isDirectory": false,
-            "size": 6351,
-            "modifiedTime": 1550849110760,
-            "changeTime": 1550849110760,
-            "contentHash": "d50921822fca4ccd4b1fb0bc29cca6baa0e1fa98",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false
+            "size": 6486,
+            "modifiedTime": 1550857910897,
+            "changeTime": 1550857910897,
+            "isWorkspace": false,
+            "contentHash": "f545342eca965ec85088fba5f9807c07de22a3d5"
         }
     ],
     [
