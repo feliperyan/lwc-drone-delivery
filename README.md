@@ -31,6 +31,8 @@ More information https://developer.salesforce.com/docs/component-library/documen
 Heroku is the fastest way to get from idea to url. We deployed a simple Python Flask server to respond to our API calls. The API receives a json payload with a list of coordinates and uses the Google OR Tools open source library to find the most efficient route.
 More information www.heroku.com 
 
+See this repo for the API server: https://github.com/feliperyan/optimal-flight-path-api
+
 
 <img src="./GoogleAI_logo_small.png" alt="Google OR Tools" width="100"/>
 
