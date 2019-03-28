@@ -76,7 +76,7 @@ export default class mapLocationsToDeliver extends LightningElement {
         
         this.clearMap();
         if(contacts.length > 1) {
-            // otherwise we only got the origin
+            // Otherwise we only get the origin
             this.canCallAPI = false;
         }
         else {
@@ -106,18 +106,18 @@ export default class mapLocationsToDeliver extends LightningElement {
                 icon: 'standard:account',
                 origin: c.Droneport__c
             }
-            // Test wether this is an "origin" point, meaning where the drone flys from.
+            // Test whether this is an "origin" point, meaning where the drone flies from.
             if (dest.origin){
                 this.origin = dest;
-            // if not plot it as per usual    
+            // If not, plot it as per usual.    
             } else {
                 this.mapMarkers.push(dest);
             }
         }
-        // Origin must be firt element:
+        // Origin must be the first element.
         this.mapMarkers.unshift(this.origin);
 
-        // Actually add markers to the map
+        // Add markers to the map.
         for (let i of this.mapMarkers){
             let lat = i['location']['Latitude'];
             let lon = i['location']['Longitude'];
@@ -190,8 +190,8 @@ export default class mapLocationsToDeliver extends LightningElement {
         
         this.theDroneIcon = L.icon({
             iconUrl: this.droneMarker,
-            iconSize:     [35, 35], // size of the icon            
-            iconAnchor:   [17, 17], // point of the icon which will correspond to marker's location            
+            iconSize:     [35, 35], // Size of the icon            
+            iconAnchor:   [17, 17], // Point of the icon, which corresponds to the marker's location            
         });
 
     }
