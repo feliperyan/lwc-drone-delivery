@@ -1,0 +1,58 @@
+{
+    "name": "drone-delivery-pipelines",
+    "version": "0.0.1",
+    "description": "Drone delivery App - Heroku Pipelines enabled",
+    "repository": "https://github.com/feliperyan/lwc-drone-delivery",
+    "author": "",
+    "license": "ALv2",
+    "bugs": {
+      "url": "https://github.com/feliperyan/lwc-drone-delivery/issues"
+    },
+    "homepage":
+      "https://github.com/feliperyan/lwc-drone-delivery#readme",
+    "dependencies": {},
+    "devDependencies": {},
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-python"  
+      },
+      {
+        "url": "https://github.com/heroku/salesforce-cli-buildpack#v3"
+      },  
+      {
+        "url": "https://github.com/feliperyan/salesforce-buildpack#fryan-allow-procfile"
+      }      
+    ],
+    "env": {
+      "SFDX_DEV_HUB_AUTH_URL": {
+        "required": true
+      },
+      "SFDX_BUILDPACK_DEBUG": {
+        "required": true
+      },
+      "HEROKU_APP_NAME" : {
+        "required": true
+      },
+      "API_KEY_HEROKU" : {
+        "required": true
+      }
+    },
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup":
+            "./vendor/sfdx/release.sh ci-$HEROKU_TEST_RUN_COMMIT_VERSION && ./bin/test-setup.sh",
+          "test": "./bin/test.sh"
+        },
+        "formation": {
+          "test": {
+            "quantity": 1,
+            "size": "standard-1x"
+          }
+        }
+      }
+    },
+    "scripts": {
+      "pr-predestroy": "./bin/ra-org-delete.sh"
+    }
+  }

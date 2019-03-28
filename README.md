@@ -16,6 +16,8 @@ An example Lightning Web Component that uses Heroku to process Salesforce data a
 4. Check the custom field `Droneport__c` checkbox of a *single* Contact so it becomes the "warehouse" from where the drone flies out.
 5. There's a hardcoded city filter for 'Sydney' at the moment, so you don't get too many results back from your contact list. If you're getting no contacts in the list change this.
 
+## Heroku Pipelines
+Consider using Heroku Pipelines if you setting up a CI/CD pipeline for your SFDX project. This repo contains a few files to enable Github pull requests to be automatically spun up as Scratch orgs which can then push a new unlocked package with the merged changes to a separate org (when the pull is merged). More info: https://github.com/heroku/salesforce-buildpack
 ---
 
 ## Tools
