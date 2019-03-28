@@ -1,7 +1,7 @@
 <template>
 
     <lightning-card>
-        <p>Seconds to compute: {timeTakenToCompute} | Meters travelled: {metersTravelled}</p>
+        <p>Seconds to compute: <span style="color:blue">{timeTakenToCompute}</span> | Meters travelled: {metersTravelled}</p>
         <lightning-button 
             onclick={handleCallAPI} 
             variant="brand" 
