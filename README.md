@@ -18,6 +18,7 @@ An example Lightning Web Component that uses Heroku to process Salesforce data a
 
 ## Heroku Pipelines
 Consider using Heroku Pipelines if you setting up a CI/CD pipeline for your SFDX project. This repo contains a few files to enable Github pull requests to be automatically spun up as Scratch orgs which can then push a new unlocked package with the merged changes to a separate org (when the pull is merged). More info: https://github.com/heroku/salesforce-buildpack
+
 ---
 
 ## Tools
